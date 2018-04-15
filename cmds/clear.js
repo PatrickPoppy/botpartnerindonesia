@@ -15,7 +15,7 @@ exports.run = async (bot, message, args) => {
           return;
       }
     
-      if (insert > 100) {
+      if (insert > 200) {
          message.channel.send("I just can delete 100 message")
       }
     
