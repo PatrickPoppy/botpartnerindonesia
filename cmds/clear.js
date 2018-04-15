@@ -24,10 +24,10 @@ exports.run = async (bot, message, args) => {
 
       message.channel.bulkDelete(fetched)
           .catch(error => message.channel.send('there is no `permission` to perform the deletion'));
-     let embed = new Discord.RichEmbed()
+          let embed = new Discord.RichEmbed()
          .setTitle('Clean! :put_litter_in_its_place:  ')
          .setDescription(`${insert} messages deleted.`)
-        .setColor("#FE2E2E")
+         .setColor("#FE2E2E")
          .setFooter('© DISCORD BOT PARTNER INDONESIA.')
      message.channel.send(embed)
      message.delete();
