@@ -1,1 +1,2 @@
-# botpartnerindonesia
+# Hyperter
+Gunakan Command, ~
