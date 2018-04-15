@@ -77,7 +77,7 @@ bot.on('guildMemberAdd', member => {
 
         channel.sendEmbed(embed);
     let autorolerole = member.guild.roles.find("name", "Member")
-    member.addRole(autorolerole).then(console.log(`${autorolerole} Has been added to user : ${member.tag} for the reason : Auto Role Settings`))
+    member.addRole(autorolerole).then(console.log(`${autorolerole.name} Has been added to user : ${member.tag} for the reason : Auto Role Settings`))
 });
 
 bot.on('guildMemberAdd', member => {
