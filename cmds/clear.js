@@ -27,8 +27,8 @@ exports.run = async (bot, message, args) => {
      let embed = new Discord.RichEmbed()
          .setTitle('Clean! :put_litter_in_its_place:  ')
          .setDescription(`${insert} messages deleted.`)
-        .setColor("#9A2EFE")
-         .setFooter('©Beta | By: Qyto | 2018')
+        .setColor("#FE2E2E")
+         .setFooter('© DISCORD BOT PARTNER INDONESIA.')
      message.channel.send(embed)
      message.delete();
   }
