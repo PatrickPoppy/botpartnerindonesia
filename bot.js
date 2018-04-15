@@ -6,7 +6,6 @@ const bot = new Discord.Client({disableEveryone: true});
 const moment = require("moment");
 const momentDurationFormat = require("moment-duration-format");
 
-bot.user.setActivity('Join DBPI Ayo !', {type: 'PLAYING'});
 
 var prefix = 'IND.';
 
@@ -14,6 +13,8 @@ var prefix = 'IND.';
 bot.on("ready", async () => {
     console.log(`Logged in as : ${bot.user.tag}`);
     console.log(`${bot.user.username} is ready!`)
+    
+    bot.user.setActivity('Join DBPI Ayo !', {type: 'PLAYING'});
     
   
 });
