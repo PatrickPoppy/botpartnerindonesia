@@ -6,7 +6,7 @@ const bot = new Discord.Client({disableEveryone: true});
 const moment = require("moment");
 const momentDurationFormat = require("moment-duration-format");
 
-
+bot.user.setActivity('Join DBPI Ayo !', {type: 'PLAYING'});
 
 var prefix = 'IND.';
 
@@ -15,13 +15,8 @@ bot.on("ready", async () => {
     console.log(`Logged in as : ${bot.user.tag}`);
     console.log(`${bot.user.username} is ready!`)
     
-            
-    function randomStatus() {
-        let status = [`on ${bot.guilds.size} guilds.`, `with ${bot.users.size.toLocaleString()} users.`, 'mention @Cosmic', 'type c.help']
-          let rstatus = Math.floor(Math.random() * status.length);
-        bot.user.setActivity(status[rstatus], {type: 'PLAYING'});
-    }; setInterval(randomStatus, 20000)
-  });
+  
+});
   
 bot.on("message", async message => {
     if(message.author.bot) return;
