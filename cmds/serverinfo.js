@@ -4,7 +4,6 @@ exports.run = async (bot, message, args) => {
   let sicon = message.guild.iconURL;
   let patrick = new Discord.RichEmbed()
   .setAuthor(message.guild.name, message.guild.iconURL)
-        .setColor("#9A2EFE")
   .setThumbnail(message.guild.iconURL)
   .setDescription(`Owner: ${message.guild.owner}`)
   .addField("Member Count:", message.guild.memberCount, true)
@@ -13,8 +12,8 @@ exports.run = async (bot, message, args) => {
   .addField("Emojis:", message.guild.emojis.size, true)
   .addField("Region:", message.guild.region, true)
   .addField('Created:', message.guild.createdAt.toLocaleString(), true)
-.setFooter('©Beta | By: Alfian Verter | 2018')
-
+        .setColor("#FE2E2E")
+         .setFooter('© DISCORD BOT PARTNER INDONESIA.')
   message.channel.send(patrick);
 }
 
