@@ -2,12 +2,13 @@ const Discord = require("discord.js");
 const superagent = require("superagent");
 const weather = require("weather-js");
 const economy = require('discord-eco');
-const bot = new Discord.Client({disableEveryone: true});
 const moment = require("moment");
 const momentDurationFormat = require("moment-duration-format");
 
 
 var prefix = 'IND.';
+
+var bot = new Discord.Client({disableEveryone: true});
 
 
 bot.on("ready", async () => {
