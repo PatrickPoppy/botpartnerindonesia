@@ -13,10 +13,10 @@ exports.run = async (bot, message, args) => {
 .addField('Fun:','`say` `vote`', true)
 .addField('Image:','`cat` `dog` `slap`', true)
 .addField('Support Bot:','`votebot` `channel` `invite`', true)
-        .setColor("#9A2EFE")
 .setThumbnail(bicon)
-.setFooter('©Beta | By: Alfian Verter | 2018')
-message.channel.send(patrick);
+        .setColor("#FE2E2E")
+         .setFooter('© DISCORD BOT PARTNER INDONESIA.')
+  message.channel.send(patrick);
 }
 
 exports.help = {
