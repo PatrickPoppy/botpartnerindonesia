@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 
 exports.run = async (bot, message, args) => {
-message.channel.send('```click the link below to support our bot!```')
+message.channel.send('```Sebarkan link server ini untuk support kami!```')
 message.channel.send('<https://discord.gg/fhzuzwM>')
 
 }
