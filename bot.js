@@ -8,7 +8,7 @@ const momentDurationFormat = require("moment-duration-format");
 
 
 
-var prefix = 'c.';
+var prefix = 'IND.';
 
 
 bot.on("ready", async () => {
@@ -52,28 +52,28 @@ bot.on("message", async autoresponder => {
         if (autoresponder.content.startsWith(prefix)) return;
     
     if (autoresponder.content === `<@!${bot.user.id}>`) {
-    autoresponder.react('👍');
-    return autoresponder.channel.send(`Hi ${sender},` + ' use this command ``c.help`` ')
+    autoresponder.react('🚩');
+    return autoresponder.channel.send(`Hai ${sender},` + ' Gunakan Command ini ``c.help`` ')
     }
     
     if (autoresponder.content === `<@${bot.user.id}>`) {
-    autoresponder.react('👍');
-    return autoresponder.channel.send(`Hi ${sender},` + ' use this command ``c.help`` ')
+    autoresponder.react('🚩');
+    return autoresponder.channel.send(`Hai ${sender},` + ' Gunakan Command ini ``help`` ')
     }
         
 });
 
 bot.on('guildMemberAdd', member => {
-    let channel = member.guild.channels.find('name', 'welcome-leave');
+    let channel = member.guild.channels.find('name', 'member-log');
     let memberavatar = member.user.displayAvatarURL;
         if (!channel) return;
         let embed = new Discord.RichEmbed()
-        .setColor("#9A2EFE")
+        .setColor("#FE2E2E")
         .setThumbnail(memberavatar)
-        .addField(':bust_in_silhouette: | name : ', `${member}`)
-        .addField(':microphone2: | Welcome!', `Welcome to the server, ${member}`)
-        .addField(':family_mwgb: | Your are the member', `${member.guild.memberCount}`)
-        .addField("Name", `<@` + `${member.id}` + `>`, true)
+        .addField(':bust_in_silhouette: | nama : ', `${member}`)
+        .addField(':microphone2: | Selamat Datang!', `Server bot partner indonesia., ${member}`)
+        .addField(':family_mwgb: | Total member', `${member.guild.memberCount}`)
+        .addField("Nama", `<@` + `${member.id}` + `>`, true)
         .addField('Server', `${member.guild.name}`, true )
         .setFooter(`${member.guild.name}`)
         .setTimestamp()
@@ -92,11 +92,11 @@ bot.on('guildMemberRemove', member => {
     let memberavatar = member.user.displayAvatarURL;
         if (!channel) return;
         let embed = new Discord.RichEmbed()
-        .setColor("#9A2EFE")
+        .setColor("#FE2E2E")
         .setThumbnail(memberavatar)
-        .addField(':bust_in_silhouette: | Name:', `${member}`)
-        .addField('Has Let the Server', 'Good Bye !')
-        .addField(':family_mwgb: | The server now as', `${member.guild.memberCount}` + " members")
+        .addField(':bust_in_silhouette: | Nama:', `${member}`)
+        .addField('Telah keluar dari server', 'Selamat Tinggal !')
+        .addField(':family_mwgb: | Total member', `${member.guild.memberCount}` + " members")
         .setFooter(`${member.guild.name}`)
         .setTimestamp()
 
