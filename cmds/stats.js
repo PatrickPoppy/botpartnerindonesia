@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const moment = require("moment");
-const VERSION = "V1.1"
-const CREATOR = "Alfian Verter"
+const VERSION = "V1.0"
+const CREATOR = "DISCORD BOT PARTNER INDONESIA"
 
 exports.run = async (bot, message, args) => {
 
@@ -15,8 +15,7 @@ exports.run = async (bot, message, args) => {
               .addField('📟 Cpu usage :', `${Math.round(cpu * 100) / 100}%`)
               .addField(`💾 Ram usage :`, `${(process.memoryUsage().rss / 1024 / 1024).toFixed(2)} MB`)
               .addField(`🔰 Creator : `, `${CREATOR}`)
-        .setColor("#9A2EFE")
-              .setFooter('©Beta | By: Alfian Verter | 2018')
+        .setColor("#FE2E2E")
           message.channel.send(embed)
 }
 
