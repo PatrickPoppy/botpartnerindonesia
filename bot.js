@@ -76,6 +76,8 @@ bot.on('guildMemberAdd', member => {
         .setTimestamp()
 
         channel.sendEmbed(embed);
+    let autorolerole = member.guild.roles.find("name", "Member")
+    member.addRole(autorolerole)
 });
 
 bot.on('guildMemberAdd', member => {
