@@ -7,7 +7,8 @@ exports.run = async (bot, message, args) => {
 
   let reportEmbed = new Discord.RichEmbed()
   .setTitle("Reports📫")
-        .setColor("#9A2EFE")
+        .setColor("#FE2E2E")
+         .setFooter('© DISCORD BOT PARTNER INDONESIA.')
   .addField("Reported User:", `${rUser}`)
   .addField("Reported By:", `${message.author}`)
   .addField("Channel:", message.channel)
