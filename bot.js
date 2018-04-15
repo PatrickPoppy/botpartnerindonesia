@@ -49,12 +49,12 @@ bot.on("message", async autoresponder => {
     
     if (autoresponder.content === `<@!${bot.user.id}>`) {
     autoresponder.react('🚩');
-    return autoresponder.channel.send(`Hai ${sender},` + ' Gunakan Command ini ``c.help`` ')
+    return autoresponder.channel.send(`Hai ${sender},` + ' Gunakan Command ini ``IND.help`` ')
     }
     
     if (autoresponder.content === `<@${bot.user.id}>`) {
     autoresponder.react('🚩');
-    return autoresponder.channel.send(`Hai ${sender},` + ' Gunakan Command ini ``help`` ')
+    return autoresponder.channel.send(`Hai ${sender},` + ' Gunakan Command ini ``IND.help`` ')
     }
         
 });
